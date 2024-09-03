@@ -1,0 +1,136 @@
+.img-fluid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 ;
+    padding: 0;
+}
+
+header {
+    background-color: #0b298d;
+    color:white;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1, section, header, h2, h5, p, a {
+    
+    font-size: 1rem;
+
+}
+main {
+    padding: 2rem;
+ 
+}
+
+section{
+    margin-bottom: 2 rem;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.word-break {
+    word-break: break-all; 
+
+}
+
+.button {
+    padding-top: 100px;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5 rem;
+}
+
+.table {
+    width:100%;
+    margin-top: 1 rem;
+}
+
+footer {
+    background-color: #0b298d;
+    color:white;
+    padding: 5px 0;
+    font-size: 10px;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container {
+    max-width: 100%;
+    min-width: 75px;
+}
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+        width: 100%;
+    }
+    .container {
+        padding: 10px;
+       
+    }
+    section {
+        text-align: justify;
+        word-break: normal; /* Revertir el word-break en estos elementos */
+        hyphens: auto;      /* Habilitar la separación por sílabas */
+        overflow-wrap: break-word; 
+    }
+
+}
+
+/* Estilos para dispositivos medianos (tabletas) */
+@media (min-width: 577px) {
+ 
+    main {
+        padding: 1rem;
+        
+    }
+    .container {
+        padding: 20px;
+        hyphens: auto;
+    }
+    section {
+        text-align: justify;
+        word-break: normal; /* Revertir el word-break en estos elementos */
+        hyphens: auto;      /* Habilitar la separación por sílabas */
+        overflow-wrap: break-word; 
+    }
+}
+
+/* Estilos para dispositivos grandes (escritorios) */
+@media (min-width: 769px) {
+    
+    .footer-container {
+        flex-direction: row;
+    }
+    body {
+        font-size: 16px;
+    }
+    .container {
+        padding: 5px;
+    }
+    section {
+        width: 67%;
+        text-align: justify;
+        word-break: normal; /* Revertir el word-break en estos elementos */
+        hyphens: auto;      /* Habilitar la separación por sílabas */
+        overflow-wrap: break-word; 
+    }
+
+}
+
